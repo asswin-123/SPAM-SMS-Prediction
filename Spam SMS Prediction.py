@@ -57,10 +57,10 @@ def predict_spam(sample_message):
     temp = cv.transform([final_message]).toarray()
     return classifier.predict(temp)
 
-result = ['Wait a minute, this is a SPAM!','Ohhh, this is a normal message.']
+result = ['This is a SPAM!','This is a normal message.']
 
 #msg = "Hi! You are pre-qulified for Premium SBI Credit Card. Also get Rs.500 worth Amazon Gift Card*, 10X Rewards Point* & more. Click "
-msg = input("[+]enter a text msg to test : ")
+msg = str(input("[+]enter a text msg to test : "))
 if predict_spam(msg):
     print(result[0])
 else:

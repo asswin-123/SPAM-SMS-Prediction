@@ -59,24 +59,18 @@ def predict_spam(sample_message):
 
 result = ['Wait a minute, this is a SPAM!','Ohhh, this is a normal message.']
 
-msg = "Hi! You are pre-qulified for Premium SBI Credit Card. Also get Rs.500 worth Amazon Gift Card*, 10X Rewards Point* & more. Click "
-
+#msg = "Hi! You are pre-qulified for Premium SBI Credit Card. Also get Rs.500 worth Amazon Gift Card*, 10X Rewards Point* & more. Click "
+msg = input("[+]enter a text msg to test : ")
 if predict_spam(msg):
     print(result[0])
 else:
     print(result[1])
 
 
-msg = "[Update] Congratulations Nile Yogesh, You account is activated for investment in Stocks. Click to invest now: "
+#msg = "[Update] Congratulations Nile Yogesh, You account is activated for investment in Stocks. Click to invest now: "
 
-if predict_spam(msg):
-    print(result[0])
-else:
-    print(result[1])
+#if predict_spam(msg):
+#    print(result[0])
+#else:
+#    print(result[1])
 
-msg = "Your Stock broker FALANA BROKING LIMITED reported your fund balance Rs.1500.5 & securities balance 0.0 as on end of MAY-20 . Balances do not cover your bank, DP & PMS balance with broking entity. Check details at YOGESHNILE.WORK4U@GMAIL.COM. If email Id not correct, kindly update with your broker."
-
-if predict_spam(msg):
-    print(result[0])
-else:
-    print(result[1])
